@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Stocks Game</title>
+</head>
+<body>
+    <h1>Stocks Game</h1>
+    <h2>Choose Company:</h2>
+    <select id="stockDropdown"></select>
+
+    <h2>Stock Details:</h2>
+    <table id="stockDetailsTable">
+        <tr>
+            <th>Name</th>
+            <th>Ticker</th>
+            <th>Industry</th>
+            <th>Market Cap</th>
+            <th>Share Price</th>
+            <th>Beta</th>
+        </tr>
+    </table>
+
+    <button id="buyStockBtn">Buy this stock!</button>
+
+    <h2>Initial Price: <span id="initialPrice"></span></h2>
+    <h2>Current Price: <span id="currentPrice"></span></h2>
+    <h2>Period Performance: <span id="periodPerformance"></span></h2>
+    <h2>Total Performance: <span id="totalPerformance"></span></h2>
+    <button id="playBtn">Play!</button>
+    <h2>Year: <span id="playCount"></span></h2>
+
+    <div class="stockPerformanceSection">
+        <table id="stockPerformanceTable">
+            <tr>
+                <th>Stock</th>
+                <th>Initial Price</th>
+                <th>Current Price</th>
+                <th>Period Performance</th>
+                <th>Total Performance</th>
+            </tr>
+        </table>
+    </div>
+    <h2>Market Performance (Total): <span id="averageMarketPerformance"></span></h2>
+
+
+    <script type="module" src="stocks.js"></script>
+</body>
+</html>

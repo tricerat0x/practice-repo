@@ -1,0 +1,72 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    color: #000000;
+    padding: 20px;
+    text-align: center; /* Center align the text */
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+button {
+    background-color: #008000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    margin: 25px auto;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #004d00;
+}
+
+#playBtn {
+    background-color: #000080;
+}
+
+#playBtn:hover {
+    background-color: #00004d;
+}
+
+span {
+    font-weight: bold;
+}
+
+#stockPerformanceTable, #stockDetailsTable {
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the tables */
+    width: 80%; /* Adjust the width as needed */
+}
+
+#stockPerformanceTable, #stockDetailsTable {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#stockPerformanceTable th, #stockDetailsTable th {
+    background-color: #ddd;
+}
+
+#buyStockBtn, #playBtn {
+    display: none;
+}
+
+.button-container {
+    text-align: center; /* Center align the buttons */
+}
+
+#stockDropdown {
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px; /* Add space below the dropdown */
+}
