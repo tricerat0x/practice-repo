@@ -56,7 +56,7 @@ span {
     background-color: #ddd;
 }
 
-#buyStockBtn, #playBtn {
+#buyStockBtn, #playBtn, #rstBtn {
     display: none;
 }
 
