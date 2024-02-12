@@ -50,13 +50,14 @@ const gameState = {
         document.getElementById("currentPrice").textContent = "";
         document.getElementById("totalPerformance").textContent = "";
         document.getElementById("periodPerformance").textContent = "";
-        document.getElementById("playCount").textContent = this.playCount;
+        document.getElementById("playCount").textContent = '';
         document.getElementById('buyStockBtn').style.display = 'none';
         document.getElementById('playBtn').style.display = 'none';
         resetTable('stockDetailsTable');
         resetTable('stockPerformanceTable');
         document.getElementById("averageMarketPerformance").textContent = "";
         document.getElementById('rstBtn').style.display = 'none';
+        document.getElementById('pickWinner').textContent = '';
     }
 };
 
