@@ -9,6 +9,8 @@ const gameState = {
     startQ: 1,
     startY: 2024,
     allStocks: [],
+    mrMktWins: 0,
+    playerWins: 0,
     
     get playCount() {
         return `Q${this.startQ}, ${this.startY}`;

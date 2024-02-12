@@ -9,7 +9,14 @@
     <title>Stocks Game</title>
 </head>
 <body class="container mt-5">
-    <h1 class="mb-4 d-flex justify-content-center bg-dark text-light">Mr. Market</h1>
+    <h1 class="mb-0 p-4 d-flex justify-content-center bg-dark text-light">Can You Beat Mr. Market?</h1>
+        <div class="mb-4 justify-content-around bg-dark text-light">
+            <h2 class="d-flex justify-content-center">SCOREBOARD</h2>
+                <div class="p-4 d-flex justify-content-around">
+                    <h3>You: <span id="playerScore"></span></h3>
+                    <h3>Mr. Market: <span id="mrMktScore"></span></h3>
+                </div>
+        </div>
     <h1 id="pickWinner" class="text-success"></h1>
     <h2 class="mb-4 d-flex justify-content-center bg-secondary text-light">Choose Stock:</h2>
     <select id="stockDropdown" class="form-control mb-5 text-info"></select>

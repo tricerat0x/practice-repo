@@ -29,13 +29,17 @@ function pickWinner() {
 
     if (parseFloat(mrMktPerf) > parseFloat(playerPerf)) {
         bannerText = 'Mr. Market wins!';
+        gameState.mrMktWins += 1;
     } else if (parseFloat(mrMktPerf) === parseFloat(playerPerf)) {
         bannerText = 'It\'s a tie! (Next time just buy an ETF.)';
     } else {
         bannerText = 'You beat Mr. Market. You\'re a stock-picking pro!';
+        gameState.playerWins += 1;
     }
 
     document.getElementById('pickWinner').textContent = bannerText;
+    document.getElementById('mrMktScore').textContent = gameState.mrMktWins;
+    document.getElementById('playerScore').textContent = gameState.playerWins;
 }
 
 
