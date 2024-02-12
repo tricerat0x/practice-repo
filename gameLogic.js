@@ -2,6 +2,7 @@ import { gameState } from './gameState.js';
 import { updatePerformanceTable, updateSelectedStockUI } from './handlers.js';
 
 function playGame() {
+    if(document.getElementById('pickWinner').textContent){return}
     gameState.updateAllStockPrices();
     if (gameState.selectedStock) {
         updateSelectedStockUI(gameState.selectedStock);
